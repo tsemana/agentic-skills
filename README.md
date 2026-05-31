@@ -1,4 +1,4 @@
-# Skills
+# Agentic Skills
 
 Reusable agentic skills for AI agents.
 
@@ -78,7 +78,7 @@ python3 scripts/validate_skills.py
 For Hermes Agent, add this repository as a skills tap once it is published:
 
 ```bash
-hermes skills tap add https://github.com/<owner>/skills
+hermes skills tap add https://github.com/<owner>/agentic-skills
 hermes skills install <skill-id>
 ```
 
