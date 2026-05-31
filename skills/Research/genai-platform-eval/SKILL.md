@@ -113,6 +113,11 @@ For each relevant domain:
 - **Prefer primary sources.** Use vendor docs and trust-center materials first; use blogs, analyst notes, and third-party coverage as supporting context.
 - **Avoid overclaiming.** Do not infer production readiness from demo videos, marketing screenshots, or isolated case studies.
 
+## When to Read the Reference Files
+
+- **`references/evaluation-domains.md`** — Read at the start of Phase 2. Contains the full taxonomy of evaluation domains, what to research in each, and which domains matter most for each deployment model.
+- **`references/question-bank.md`** — Read when drafting follow-up questions. Contains proven question patterns organized by domain, drawn from real enterprise AI evaluations.
+
 ## Evaluation Domains
 
 Use `references/evaluation-domains.md` as the source of truth for domain details. At minimum, consider these categories:
@@ -280,6 +285,7 @@ Use when the organization could plausibly build the capability:
 - [ ] Data stack and integration targets are captured.
 - [ ] Evaluation target and decision context are clear.
 - [ ] `references/evaluation-domains.md` was reviewed before domain research.
+- [ ] `references/question-bank.md` was reviewed before drafting vendor questions.
 - [ ] Findings are labeled as confirmed, not confirmed, or not found.
 - [ ] Vendor questions target evidence gaps and adoption risks.
 - [ ] Priority ranking matches the deployment model.
