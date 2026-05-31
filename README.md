@@ -4,6 +4,12 @@ Reusable agentic skills for AI agents.
 
 This repository is organized as a small, publishable skill library. Each skill is a class-level workflow package with a rich `SKILL.md` and optional supporting files.
 
+## Skill catalog
+
+| Skill | Category | Purpose |
+|---|---|---|
+| `youtube-transcript` | `Research` | Extract verbatim transcripts from public YouTube videos and Shorts using Gemini. |
+
 ## Repository structure
 
 ```text
