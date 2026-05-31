@@ -8,6 +8,7 @@ This repository is organized as a small, publishable skill library. Each skill i
 
 | Skill | Category | Purpose |
 |---|---|---|
+| `genai-platform-eval` | `Research` | Evaluate GenAI platforms, services, orchestration layers, and agent frameworks for adoption. |
 | `youtube-transcript` | `Research` | Extract verbatim transcripts from public YouTube videos and Shorts using Gemini. |
 
 ## Repository structure
