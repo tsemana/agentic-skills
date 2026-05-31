@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local/env files
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/
+.idea/
+
+# Generated artifacts
+/tmp/
+dist/
+build/
