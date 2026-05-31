@@ -82,6 +82,8 @@ python3 scripts/validate_skills.py
 
 ## Installation / use
 
+See [`docs/agent-setup.md`](docs/agent-setup.md) for Hermes, Claude / Claude Code, Gemini, and generic agent consumption patterns.
+
 For Hermes Agent, add this repository as a skills tap once it is published:
 
 ```bash
@@ -89,11 +91,13 @@ hermes skills tap add https://github.com/<owner>/agentic-skills
 hermes skills install <skill-id>
 ```
 
-For local/manual use, copy a skill directory into:
+For local/manual Hermes use, copy a skill directory into:
 
 ```bash
 ~/.hermes/skills/<category>/<skill-name>/
 ```
+
+For Claude, Gemini, or other agents, clone the repo and point the agent at the relevant `skills/<category>/<skill-name>/SKILL.md` plus any referenced files under that skill's `references/` directory.
 
 ## License
 
