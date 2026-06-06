@@ -9,6 +9,7 @@ This repository is organized as a small, publishable skill library. Each skill i
 | Skill | Category | Purpose |
 |---|---|---|
 | `genai-platform-eval` | `Research` | Evaluate GenAI platforms, services, orchestration layers, and agent frameworks for adoption. |
+| `operational-session-closeout` | `Dev` | Close substantial agent sessions with objective state, verification evidence, raw usage telemetry priorities, lifecycle markers, open loops, and handoff-ready next actions. |
 | `story-map` | `Dev/CLAUDE` | Facilitate Three Amigos story mapping sessions with a PO/Dev/QA agent team that debates via messaging and builds a master story map incrementally. Requires Claude Code agent teams. |
 | `youtube-transcript` | `Research` | Extract verbatim transcripts from public YouTube videos and Shorts using Gemini. |
 

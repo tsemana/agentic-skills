@@ -50,8 +50,10 @@ Copy the skill directory into the local Hermes skills folder:
 
 ```bash
 mkdir -p ~/.hermes/skills/Research
+mkdir -p ~/.hermes/skills/Dev
 cp -R skills/Research/genai-platform-eval ~/.hermes/skills/Research/
 cp -R skills/Research/youtube-transcript ~/.hermes/skills/Research/
+cp -R skills/Dev/operational-session-closeout ~/.hermes/skills/Dev/
 hermes skills list
 ```
 
@@ -80,6 +82,7 @@ Recommended approaches:
    ## Available external skills
 
    - GenAI platform evaluation: read `<path-to-agentic-skills>/skills/Research/genai-platform-eval/SKILL.md` before evaluating AI platforms. Also read its `references/evaluation-domains.md` and `references/question-bank.md` when doing research or drafting vendor questions.
+   - Operational session closeout: read `<path-to-agentic-skills>/skills/Dev/operational-session-closeout/SKILL.md` before wrapping substantial sessions, preparing compaction, or producing handoff notes. Load references only when telemetry implementation details, templates, or examples are needed.
    - YouTube transcript: read `<path-to-agentic-skills>/skills/Research/youtube-transcript/SKILL.md` before extracting YouTube transcripts.
    ```
 
