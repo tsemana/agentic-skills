@@ -9,13 +9,14 @@ This repository is organized as a small, publishable skill library. Each skill i
 | Skill | Category | Purpose |
 |---|---|---|
 | `genai-platform-eval` | `Research` | Evaluate GenAI platforms, services, orchestration layers, and agent frameworks for adoption. |
+| `story-map` | `Dev/CLAUDE` | Facilitate Three Amigos story mapping sessions with a PO/Dev/QA agent team that debates via messaging and builds a master story map incrementally. Requires Claude Code agent teams. |
 | `youtube-transcript` | `Research` | Extract verbatim transcripts from public YouTube videos and Shorts using Gemini. |
 
 ## Repository structure
 
 ```text
 skills/
-├── <category>/
+├── <category>/            # categories may nest, e.g. Dev/CLAUDE/
 │   └── <skill-name>/
 │       ├── SKILL.md
 │       ├── references/  # optional: long-form notes, examples, session-specific detail
@@ -27,6 +28,8 @@ skills/
 └── .github/workflows/
     └── validate-skills.yml
 ```
+
+Skills that target a specific agent runtime live under a runtime subcategory (e.g. `skills/Dev/CLAUDE/` for skills that require Claude Code-specific tools such as agent teams). Each such skill must state its runtime requirements in a `## Requirements` section.
 
 ## Skill standard
 
@@ -56,6 +59,15 @@ metadata:
     tags: [agentic-ai, skills]
     related_skills: []
 ---
+```
+
+Runtime-specific skills (anything that cannot run on a generic agent) should declare the runtime instead of the `hermes` namespace, so they are not indexed as Hermes-installable:
+
+```yaml
+metadata:
+  runtime: claude-code
+  tags: [agent-teams]
+  related_skills: []
 ```
 
 Recommended body sections:

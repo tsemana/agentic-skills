@@ -128,9 +128,13 @@ def main() -> int:
         print(f"ERROR: skills directory not found: {SKILLS_DIR}", file=sys.stderr)
         return 1
 
-    skill_files = sorted(SKILLS_DIR.glob("*/*/SKILL.md"))
+    skill_files = sorted(
+        path
+        for path in SKILLS_DIR.rglob("SKILL.md")
+        if not ALLOWED_SUPPORT_DIRS.intersection(path.relative_to(SKILLS_DIR).parts)
+    )
     if not skill_files:
-        print("No SKILL.md files found yet. Scaffold is valid; add skills under skills/<category>/<name>/SKILL.md.")
+        print("No SKILL.md files found yet. Scaffold is valid; add skills under skills/<category>[/<subcategory>]/<name>/SKILL.md.")
         return 0
 
     all_errors: list[str] = []
